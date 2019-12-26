@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/trailer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/trailers"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/trailer_empty_state"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/noresult" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/trailer_rcyclr_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trailer_header">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
